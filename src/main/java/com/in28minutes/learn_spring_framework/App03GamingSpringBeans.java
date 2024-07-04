@@ -17,21 +17,10 @@ public class App03GamingSpringBeans {
 					(GamingConfiguration.class)) {
 			
 			context.getBean(GamingConsole.class).up();
-
+			
+			context.getBean(GameRunner.class).run();
 		}
 		
-		
-		
-		
-		// TODO Auto-generated method stub
-		//var game = new MarioGame();
-		//var game = new SuperContraGame();
-//		var game = new PacManGame(); //1: Object creation
-//		
-//		//2: Object Creation + Wiring of Dependencies
-//		//Game is a Dependency of GameRunner
-//		var gameRunner = new GameRunner(game);
-//		gameRunner.run();
 	}
 
 }
